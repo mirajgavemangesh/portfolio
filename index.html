@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mangesh Mirajgave – UX Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+<style>
+:root{--bg:#F4F7FA;--ink:#14202B;--mu:#556575;--ln:#DCE3EA;--ac:#0A66A8;--nv:#0B2B45;--sk:#4CB8F2;--sf:#fff;color-scheme:light}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 Poppins,"Segoe UI",system-ui,-apple-system,sans-serif}
+a{color:var(--ac)}a:focus-visible,button:focus-visible{outline:3px solid var(--sk);outline-offset:3px;border-radius:4px}
+.w{max-width:1360px;margin:0 auto;padding:0 20px}
+header{background:var(--sf);border-bottom:1px solid var(--ln);position:sticky;top:0;z-index:5}
+header .w{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+.logo{font-weight:700;color:var(--nv);text-decoration:none;font-size:1.05rem}
+nav a{color:var(--mu);text-decoration:none;margin-left:24px;font-weight:500;padding:6px 0;border-bottom:2px solid transparent}
+nav a[aria-current],nav a:hover{color:var(--nv);border-bottom-color:var(--sk)}
+.band{background:var(--nv);color:#fff;border-top:4px solid var(--sk)}
+.band .w{padding-top:56px;padding-bottom:56px}.band.sm .w{padding-top:32px;padding-bottom:32px}
+.hero{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center}
+h1{font-size:clamp(1.8rem,3.9vw,2.9rem);line-height:1.2;font-weight:700;margin:0 0 18px;max-width:22em}
+h1.ct{font-size:clamp(1.4rem,3vw,2rem);margin:0}
+h2{font-size:1.45rem;color:var(--nv);font-weight:600;margin:0 0 6px;line-height:1.3}
+h3{font-size:1rem;margin:0 0 8px;color:var(--nv)}
+p{margin:0 0 14px;max-width:70ch}.band p{color:#D3E1EE}
+.lead{font-size:1.08rem;max-width:60ch}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-block;padding:11px 22px;border-radius:6px;border:1.5px solid #fff;color:#fff;background:transparent;text-decoration:none;font:600 .95rem Poppins,system-ui,sans-serif;cursor:pointer}
+.btn.p{background:var(--sk);border-color:var(--sk);color:var(--nv)}.btn:hover{filter:brightness(1.08)}
+.me{text-align:center}.me img{width:170px;height:170px;object-fit:cover;object-position:top;border-radius:50%;border:4px solid var(--sk);display:block;margin:0 auto 12px}
+.me b{display:block;font-weight:600}.me span{font-size:.88rem;color:#B9CCDD}
+.sec{padding:52px 0 0}.sub{color:var(--mu);margin-bottom:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.card{background:var(--sf);border:1px solid var(--ln);border-radius:10px;padding:24px;box-shadow:0 1px 3px rgba(11,43,69,.06);display:flex;flex-direction:column;color:var(--ink);text-decoration:none}
+a.card:hover{border-color:var(--sk);box-shadow:0 6px 18px rgba(11,43,69,.1)}
+.card .tg{font-size:.82rem;font-weight:600;color:var(--ac);margin-bottom:6px}
+.card b{font-size:1.15rem;line-height:1.35;color:var(--nv);margin-bottom:8px}
+.card .d{color:var(--mu);font-size:.95rem;flex:1}.card .go{margin-top:12px;font-weight:600;color:var(--ac);font-size:.95rem}
+.card.nd{background:#EDF2F7;box-shadow:none}
+.kw{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
+figure{margin:0;background:var(--sf);border:1px solid var(--ln);border-radius:10px;padding:12px}
+figure img{width:100%;height:auto;display:block;border-radius:6px}
+figcaption{font-size:.9rem;color:var(--mu);padding:10px 4px 2px}
+.tl{list-style:none;padding:0;margin:0}.tl li{display:grid;grid-template-columns:170px 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--ln)}.tl li:first-child{border-top:0}.tl span{color:var(--mu);font-size:.93rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}.chips li{background:#E8F1F8;color:var(--nv);border-radius:99px;padding:4px 14px;font-size:.9rem}
+.pg{background:#fff;border:1px solid var(--ln);border-radius:10px;overflow:hidden;line-height:0;margin-top:24px;box-shadow:0 1px 3px rgba(11,43,69,.06)}
+.sl{position:relative}.sl img{width:100%;height:auto;display:block}
+.hs{position:absolute;display:block;cursor:pointer;border-radius:4px}.hs:hover{outline:2px solid var(--ac)}
+.pn{display:flex;justify-content:space-between;gap:16px;padding:28px 0 0;flex-wrap:wrap}
+footer{margin-top:64px;background:var(--nv);color:#C6D6E4;padding:28px 0 36px;font-size:.93rem}footer p{margin:0 0 6px;max-width:none}footer a{color:#fff}
+@media(max-width:760px){.hero{grid-template-columns:1fr;gap:28px}.me{text-align:left}.me img{margin:0 0 12px;width:120px;height:120px}.tl li{grid-template-columns:1fr;gap:2px}nav a{margin:0 0 0 16px}.band .w{padding-top:36px;padding-bottom:36px}.grid,.kw{grid-template-columns:1fr}}
+</style></head><body>
+<header><div class="w"><a class="logo" href="#/">Mangesh Mirajgave</a><nav aria-label="Main"><a href="#/" data-n="home">Work</a><a href="#/about" data-n="about">About</a><a href="resume.pdf" target="_blank" rel="noopener">Resume</a></nav></div></header>
+<main id="app"></main>
+<footer><div class="w" id="ft"></div></footer>
+<script>
+var C={email:"",linkedin:"",resume:"",portfolio:""};
+var IMG={a:"img/kind-22.jpg",b:"img/kind-23.jpg",c:"img/kind-24.jpg"};
+var L=function(a){return"<ul>"+a.map(function(x){return"<li>"+x+"</li>"}).join("")+"</ul>"};
+var T=function(h,r){return'<div class="tb"><table><thead><tr>'+h.map(function(x){return"<th>"+x+"</th>"}).join("")+"</tr></thead><tbody>"+r.map(function(x){return"<tr>"+x.map(function(y){return"<td>"+y+"</td>"}).join("")+"</tr>"}).join("")+"</tbody></table></div>"};
+var CH=function(a){return'<ul class="chips">'+a.map(function(x){return"<li>"+x+"</li>"}).join("")+"</ul>"};
+var CS={kiosk:{t:"Chili’s & It’s Just Wings self-service kiosk"},quest:{t:"Quest Intelligence: event reporting system"},vernova:{t:"GE Vernova Electrification Software website"}};
+var ORD=["kiosk","quest","vernova"];
+var WK={kiosk:["Hospitality · Kiosk MVP","Brinker International’s first self-service kiosk, ordering from two restaurant brands in one checkout."],quest:["Oil & Gas · Enterprise web app","A safety event reporting platform rebuilt for Angular, with global workflows intact."],vernova:["Energy · B2B website","1,500+ pages redesigned and moved to Drupal for GE Vernova’s rebrand."]};
+function fig(k,c){return'<figure><img src="'+IMG[k]+'" alt="'+c+'" loading="lazy"><figcaption>'+c+"</figcaption></figure>"}
+function home(){
+var W=ORD.map(function(k){return'<a class="card" href="#/work/'+k+'"><span class="tg">'+WK[k][0]+'</span><b>'+CS[k].t+'</b><span class="d">'+WK[k][1]+'</span><span class="go">View case study</span></a>'}).join("");
+W+='<div class="card nd"><span class="tg">Energy · Enterprise web app · 2025–2026</span><b>GE Advanced Distribution Management System</b><span class="d">Redesigned and unified the Outstation Management, Distribution Management and SCADA modules into one grid management platform. Confidential client work; a walkthrough is available on request.</span></div>';
+return'<div class="band"><div class="w hero"><div><h1>Designing clear, scalable experiences for enterprise and consumer products.</h1><p class="lead">UX designer with 7+ years of experience across Oil &amp; Gas, Energy and Hospitality. I turn complex business requirements into intuitive, accessible interfaces and work closely with developers to deliver them.</p><div class="btns"><button class="btn p" onclick="document.getElementById(\'work\').scrollIntoView({behavior:\'smooth\'})">View case studies</button><a class="btn" href="resume.pdf" target="_blank" rel="noopener">View resume</a></div></div><div class="me"><img src="img/profile.jpg" alt="Mangesh Mirajgave"><b>Mangesh Mirajgave</b><span>UX Designer</span></div></div></div>'+
+'<div class="w"><div class="sec" id="work"><h2>Selected work</h2><p class="sub">Enterprise, energy and hospitality products, from research to developer handoff.</p><div class="grid">'+W+'</div></div>'+
+'<div class="sec"><h2>Recognition</h2><p class="sub">Feedback from clients and leadership at Brinker, Capgemini and GE.</p><div class="kw">'+fig("b","Thank-you note from Brandon Baker, Marketing Manager at Brinker International, for the It’s Just Wings and Chili’s app and website (Aug 2022).")+fig("a","Certificate of appreciation from Capgemini and Brinker leadership for outstanding contribution to Brinker Digital.")+fig("c","eCard from Ankit Singh (Sep 2025) for my work on the GE ADMS project, including my suggestion to streamline the user interface.")+"</div></div></div>"}
+function about(){
+var R=[["Sep 2021 – Present","<strong>Capgemini</strong>, UX Associate Consultant<br><span>GE ADMS (2025–26), GE Vernova website (2024), SLB event reporting (2023–24), Brinker International (2021–23)</span>"],["Mar 2020 – Sep 2021","<strong>Baxture Technology</strong>, UX UI Designer<br><span>Healthcare products and an HRMS portal</span>"],["Apr 2019 – Mar 2020","<strong>Salt Technologies</strong>, UX UI Designer<br><span>WordPress business websites and social media creatives</span>"]];
+var cd=function(t,x){return'<div class="card"><h3>'+t+"</h3>"+x+"</div>"};
+return'<div class="band"><div class="w"><h1>About me</h1><p class="lead">I’m a UX designer with 7+ years of experience creating user-centric solutions in Oil &amp; Gas, Energy and Hospitality. I use design thinking to solve complex business challenges and I’m comfortable collaborating with developers on Angular Material.</p></div></div><div class="w"><div class="sec"><div class="card"><h2>Experience</h2><ul class="tl">'+R.map(function(r){return"<li><span>"+r[0]+"</span><div>"+r[1]+"</div></li>"}).join("")+'</ul></div></div><div class="sec grid">'+
+cd("Methodologies",CH(["Design thinking","User research","Comparative analysis","Customer journey maps","User personas","Information architecture","User flows","Wireframing","Prototyping","Web accessibility","User testing","Data visualization","Design systems"]))+cd("Tools",CH(["Figma","Adobe XD","Sketch","Photoshop","InVision","Illustrator"]))+
+cd("Education",'<p><strong>B.E. Computer Engineering</strong>, 2013–2017<br>Smt. Kashibai Navale College of Engineering, Pune</p>')+cd("Certifications",'<p><strong>Human Factors in AI</strong><br>Duke University (Coursera), Oct 2025</p><p><strong>Google UX Foundations</strong><br>Coursera, Oct 2021</p>')+'</div><div class="sec"><h2>Recognition</h2><p class="sub"> </p><div class="kw">'+fig("a","Capgemini and Brinker leadership certificate for outstanding contribution to Brinker Digital.")+fig("b","Thank-you note from Brinker’s marketing manager, Aug 2022.")+fig("c","GE ADMS eCard, Sep 2025.")+"</div></div></div>"}
+var LK={"kiosk": [["https://www.figma.com/proto/tq2BkD7SARwvP91WJy7LsS/KIOSK-Case-Study--Copy-?page-id=1311%3A4299&node-id=1330-251&viewport=453%2C366%2C0.04&scaling=min-zoom&starting-point-node-id=1311%3A6138", 0, 69.861, 36.495, 21.382, 1.885], ["https://www.figma.com/proto/tq2BkD7SARwvP91WJy7LsS/KIOSK-Case-Study--Copy-?page-id=1311%3A4299&node-id=1330-251&viewport=453%2C366%2C0.04&scaling=min-zoom&starting-point-node-id=1311%3A6138", 5, 20.807, 7.784, 53.884, 3.295]], "quest": [], "vernova": [["https://www.gevernova.com/software/", 0, 13.194, 45.015, 20.45, 1.97]]};
+function cs(k){var c=CS[k],i=ORD.indexOf(k),n=ORD[(i+1)%3],p=ORD[(i+2)%3],im="";for(var j=0;j<6;j++){var h="";(LK[k]||[]).forEach(function(l){if(l[1]===j)h+='<a class="hs" href="'+l[0].replace(/&/g,"&amp;")+'" target="_blank" rel="noopener" aria-label="Open link" style="left:'+l[2]+'%;top:'+l[3]+'%;width:'+l[4]+'%;height:'+l[5]+'%"></a>'});
+im+='<div class="sl"><img src="img/'+k+'-'+(j+1)+'.jpg" alt="'+(j==0?c.t+' case study':'')+'" '+(j>0?'loading="lazy" ':'')+'>'+h+"</div>"}
+return'<div class="band sm"><div class="w"><h1 class="ct">'+c.t+'</h1></div></div><div class="w"><div class="pg">'+im+'</div><div class="pn"><a href="#/work/'+p+'">Previous: '+CS[p].t+'</a><a href="#/work/'+n+'">Next: '+CS[n].t+"</a></div></div>"}
+function ft(){var a=[];if(C.email)a.push('<a href="mailto:'+C.email+'">'+C.email+"</a>");if(C.linkedin)a.push('<a href="'+C.linkedin+'" target="_blank" rel="noopener">LinkedIn</a>');a.push('<a href="resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>');return"<p>Open to UX design roles. "+a.join(" &nbsp;|&nbsp; ")+"</p><p>© 2026 Mangesh Mirajgave</p>"}
+function go(){var h=(location.hash||"#/").slice(2),m=h.match(/^work\/(\w+)$/),v,t="Mangesh Mirajgave – UX Designer",n="home";
+if(m&&CS[m[1]]){v=cs(m[1]);t=CS[m[1]].t+" – Mangesh Mirajgave";n="home"}else if(h==="about"){v=about();t="About – Mangesh Mirajgave";n="about"}else v=home();
+document.getElementById("app").innerHTML=v;document.title=t;document.getElementById("ft").innerHTML=ft();
+[].forEach.call(document.querySelectorAll("nav a"),function(a){a.getAttribute("data-n")===n&&!m?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current")});window.scrollTo(0,0)}
+window.addEventListener("hashchange",go);go();
+</script></body></html>
